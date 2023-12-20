@@ -1,0 +1,17 @@
+
+refrence website "https://ecommerce-codewithzosh.vercel.app/"
+
+install tailwind css
+install "Tailwind CSS IntelliSense"
+install npm i react-alice-carousel@2.7.1
+Navigation structure
+tailwind component(Store Navigation)
+install @headlessui/react
+install @heroicons/react
+use Basic carousel
+create main carousel
+use data main carousel
+create home page
+create home section card
+create home section carousel
+use section card in carousel
