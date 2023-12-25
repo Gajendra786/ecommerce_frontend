@@ -15,6 +15,7 @@ import store from "./store/store"
 import {
   createBrowserRouter,
   RouterProvider,
+  BrowserRouter
 } from "react-router-dom";
 import { Provider } from 'react-redux';
 
@@ -71,7 +72,10 @@ root.render(
     // <Provider store={store}>
     //   <RouterProvider router={router}/>
     // </Provider>
-    <Home />
+    <BrowserRouter>
+      <Home />
+    </BrowserRouter>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
