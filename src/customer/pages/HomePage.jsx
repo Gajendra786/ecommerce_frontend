@@ -6,6 +6,10 @@ import Footer from '../components/Footer/Footer'
 import {mens_kurta} from "../Data/mens_kurta.js"
 import ProductCard  from "../components/Product/ProductCard"
 import Product  from "../components/Product/Product"
+import ProductDetails from "../components/ProductDetails/ProductDetails"
+import Cart from "../components/Carts/Cart"
+import Checkout from '../components/Checkout/Checkout'
+import Order from '../components/Order/Order'
 
 const HomePage = () => {
   return (
@@ -20,7 +24,11 @@ const HomePage = () => {
       </div>
       <Footer /> */}
       {/* <ProductCard /> */}
-      <Product />
+      {/* <Product /> */}
+      {/* <ProductDetails /> */}
+      {/* <Cart /> */}
+      {/* <Checkout /> */}
+      <Order />
     </div>
   )
 }

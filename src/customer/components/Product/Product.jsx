@@ -28,7 +28,6 @@ export default function Product() {
   const handleFilter = (value, sectionId) => {
     const searchParams = new URLSearchParams(location.search);
     let filterValue = searchParams.getAll(sectionId);
-    console.log(filterValue,"+++")
     if (filterValue.length > 0 && filterValue[0].split(",").includes(value)) {
       filterValue = filterValue[0].split(",").filter((item) => item !== value);
       if (filterValue.length === 0) {
@@ -50,9 +49,6 @@ export default function Product() {
     const query = searchParams.toString();
     navigate({ search: `?${query}` });
   }
-
-
-
 
 
 
