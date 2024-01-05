@@ -10,7 +10,7 @@ import NotFoundPage from "./components/NotFound"
 import {ProtectedRoute,PublicRoute} from "./components/Layout"
 import {Outlet,Navigate} from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
-import Home from '../src/customer/pages/HomePage';
+// import Home from '../src/customer/pages/HomePage';
 import store from "./store/store"
 import {
   createBrowserRouter,
@@ -73,7 +73,7 @@ root.render(
     //   <RouterProvider router={router}/>
     // </Provider>
     <BrowserRouter>
-      <Home />
+      <App />
     </BrowserRouter>
 
 );
