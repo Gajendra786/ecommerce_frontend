@@ -1,31 +1,23 @@
-import Navigation from "./customer/components/Navigation/Navigation"
-import HomePage from "./customer/pages/HomePage"
-import Footer from "./customer/components/Footer/Footer";
-import Product from "./customer/components/Product/Product.jsx"
-import ProductDetails from "./customer/components/ProductDetails/ProductDetails";
-import Cart from "./customer/components/Carts/Cart"
-import Checkout from "./customer/components/Checkout/Checkout";
-import DeliveryAddressForm from "./customer/components/Checkout/DeliveryAddressForm"
-import Order from "./customer/components/Order/Order";
-import OrderDetails from "./customer/components/Order/OrderDetails";
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Route, Routes } from "react-router-dom";
-import CustomerRouters from "./customer/Routers/CustomerRouters";
+import Navigation from './customer/Components/Navbar/Navigation';
+import CustomerRoutes from './Routers/CustomerRoutes';
+import AdminRoutes from './Routers/AdminRoutes';
+import NotFound from './Pages/Notfound';
+import AdminPannel from './Admin/AdminPannel';
+// import Routers from './Routers/Routers';
 
 function App() {
+  const isAdmin=true;
   return (
-    <>
-    <div className="App">
+    <div className="">
+      
       <Routes>
-        <Route path="/*" element={<CustomerRouters />}></Route>
+        <Route path="/*" element={<CustomerRoutes />} />
+        <Route path="/admin/*" element={<AdminPannel />} />
+        
       </Routes>
-      
     </div>
-    <div>
-      
-    </div>
-    <Footer />
-    </>
   );
 }
 
